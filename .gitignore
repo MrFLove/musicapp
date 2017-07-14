@@ -1,9 +1,6 @@
 /*
-!bin/
-!PSD/
-!public/
-!routes/
-!views/
-!app.js
+!dist/
+!src/
+!index.html
 !package.json
-!README.md
+!webpack.config.js
