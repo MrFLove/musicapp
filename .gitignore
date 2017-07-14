@@ -1,5 +1,6 @@
 /*
 !dist/
+dist/**
 !src/
 !index.html
 !package.json

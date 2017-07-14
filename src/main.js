@@ -1,14 +1,23 @@
-//main.js这是项目的核心文件。全局的配置都在这个文件里面配置
 import Vue from 'vue'
 import App from './App.vue'
-import router from './routes.js'
+import VueRouter from 'vue-router'
+import Page01 from './components/page01.vue'
+import Page02 from './components/page02.vue'
 
-import './assets/styles/base.css'
-//import './assets/sass/reset.sass'//报错暂时不用sass
-Vue.config.debug = true;//开启错误提示
+Vue.use(VueRouter)//全局安装路由功能
+//定义路径
+const routes = [
+  { path: '/', component: Page01 },
+  { path: '/02', component: Page02 },
+]
+//创建路由对象
+const router = new VueRouter({
+  routes
+})
 
 new Vue({
-        router,
-        el: '#appIndex',
-        render: h => h(App)
+  el: '#app',
+  template: '<App/>',
+  components: { App },
+  router
 })
