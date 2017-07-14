@@ -1,0 +1,13 @@
+/*
+!.gitignore
+!wp-content/
+!wp-admin
+!favicon.ico
+!Dockerfile
+!run.sh
+!www\wp-includes\js\tinymce\skins\wordpress\wp-content.css
+wp-content/uploads/
+wp-content/languages/
+wp-content/index.php
+
+docker-compose.yml
